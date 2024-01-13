@@ -12,8 +12,7 @@ while True:
     choice = int(input('Choose a number between 0 and 20: '))
     
     if 0 <= choice <=20: # Display the chosen number in words if it's within the range
-        print(f'You chose the number {words[choice]}.') # espaço reservado que será substituído 
-# pelo valor no índice choice da tupla words
+        print(f'You chose the number {words[choice]}.') 
     else:
         print('Try again. Number out of supported range.')
         continue # Go back to the beginning of the loop
@@ -22,12 +21,5 @@ while True:
     if answer in 'N/n':
         break    
        
-#  espaço reservado que será substituído 
-# pelo valor no índice escolha da tupla extenso
-# A associação entre o número e sua representação por extenso ocorre por meio do índice na 
-# tupla extenso. No código fornecido, a variável escolha armazena o número digitado pelo usuário. 
-# Em seguida, essa variável é usada como índice na tupla extenso para obter a representação por extenso correspondente.
-# A associação entre o número digitado (escolha) e sua representação por extenso ocorre 
-# automaticamente devido ao uso do índice na tupla.
 
 
