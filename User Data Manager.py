@@ -8,15 +8,14 @@ def save_user_data(user_data): # Function to save user data to a file in JSON fo
     with open('user_data.json', 'w') as file:
         json.dump(user_data, file)
 
-# For user input
 done = False
 user_data = {}
 
 while not done:
-    # Role selection, if user or admin
     role = input("Are you a user or an administrator? (Type 'user' or 'admin'): ").lower()
     if role == 'user':
 
+        # For user input
         # User name
         while True:
             def validate_user_name(user_name):
@@ -69,7 +68,6 @@ while not done:
 
         # User house number
         while True:
-            # Check if the house number length is within acceptable limits
             minimum_length = 1
             maximum_length = 10
 
@@ -84,9 +82,7 @@ while not done:
         # User street
         while True:
             def validate_user_street(user_street):
-                # Check if the street contains only letters and spaces
                 return all(c.isalpha() or c.isspace() for c in user_street)
-            # Check if the street length is within acceptable limits
             minimum_length = 2
             maximum_length = 20
 
@@ -100,9 +96,7 @@ while not done:
         # User city
         while True:
             def validate_user_city(user_city):
-                # Check if the city contains only letters and spaces
                 return all(c.isalpha() or c.isspace() for c in user_city)
-            # Check if city length is within acceptable limits
             minimum_length = 2
             maximum_length = 10
 
@@ -115,8 +109,8 @@ while not done:
         save_user_data(user_data) # Save user data to a file
         done = True  # Exiting the outer loop for the user
 
+    # For administrator 
     elif role == 'admin':
-        # For administrator 
         
         def load_user_data(): # Loads user data from a file (if the file exists).
             try:
@@ -155,5 +149,7 @@ while not done:
 
     else:
         print('Invalid role. Please enter "user" or "admin".')
+
+
 
 
