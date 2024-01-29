@@ -1,0 +1,5 @@
+01/03/2023 08:30 AM | Shipped | EU11223344 | Amsterdam | Electronics
+05/03/2023 11:15 AM | Out for Delivery | EU44556677 | Barcelona | Gadgets
+10/03/2023 02:30 PM | Delivered | EU88990011 | Vienna | Outdoor Gear
+15/03/2023 04:45 PM | In Transit | EU33445566 | Prague | Home Appliances
+20/03/2023 07:00 PM | Arrived at Sort Facility | EU99887766 | Zurich | Electronics
